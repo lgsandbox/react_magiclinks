@@ -1,22 +1,9 @@
 // created global styles, layout schema, render breakpoints
 // add routes & pages to, encapsulate component sections
 
-import { createGlobalStyle } from "styled-components"
-import Home from "./routes/pages/home.js";
+import { GlobalStyle } from "./styles/global.styled.js";
+import Home from "./pages/homePage.js";
 
-
-
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background: #fff;
-    color: hsl(192, 100%, 9%);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.15em;
-    margin: 0;
-  
-  }
-`
 
 
 function App() {

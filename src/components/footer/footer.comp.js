@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Container } from '../../styles/global.styled.js';
 
-
 const FooterStyle = styled.nav`
 position: fixed;
 left: 0;
@@ -12,19 +11,13 @@ color: white;
 text-align: center;
 `
 
-function Footer() {
+export default function Footer() {
     return (
-        
-
         <FooterStyle>
-        <Container>
-        We've got fun & games 
-
-        </Container>
+            <Container>
+            We've got fun & games 
+            </Container>
         </FooterStyle>
-
-
     )
 }
 
-export default Footer;

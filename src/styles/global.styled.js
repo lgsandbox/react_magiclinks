@@ -1,4 +1,16 @@
 import styled from 'styled-components';
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: #fff;
+    color: hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15em;
+    margin: 0;
+  
+  }
+`
 
 // import because i keep clicking here anyways haha
 // ./styles/global.styled.js
@@ -28,4 +40,4 @@ const Space = styled.section`
 
 `
 
-export { Wrapper, Title, Break, Container, Space}
+export { Wrapper, Title, Break, Container, Space, GlobalStyle}

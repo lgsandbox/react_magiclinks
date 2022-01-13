@@ -1,20 +1,14 @@
 import ForumFactory from '../buttons/smartForumFactory.button.js';
-import ContentView from './content.comp.js'
-import { Space, Container, Wrapper } from '../../styles/global.styled.js';
+import ContentView from '../content/content.comp.js'
+import { Space } from '../../styles/global.styled.js';
 
 function Body() {
-    return (
-        
-        <>
-        <ForumFactory></ForumFactory>
-        <Container>
-        <Space/>
-        </Container>
-        <ContentView></ContentView>
-        </>
-
-
-
+    return (   
+            <>
+                <ForumFactory/>
+                <Space/>
+                <ContentView/>
+            </>
     )
 }
 

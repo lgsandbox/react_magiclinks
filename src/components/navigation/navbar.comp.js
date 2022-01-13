@@ -1,12 +1,8 @@
 import styled from "styled-components";
 import { Break } from '../../styles/global.styled.js';
-import {
-
-    Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // outer element styles
-
 const NavStyle = styled.nav`
     display: flex;
     align-items: center;
@@ -17,16 +13,15 @@ const NavStyle = styled.nav`
     border: solid black 1px;
     width: 100%;
     
+    
 `
 
 // passing inner styles as props 
-
 const linkStyle = {
     margin: "1rem",
     textDecoration: "none",
     color: 'white',
-  };
-  
+};
 
 const searchStyle = {
     border: '2px solid',
@@ -38,28 +33,18 @@ const searchStyle = {
     background: '#f5f5f5',
 }
 
-function Navbar() {
+export default function Navbar() {
     return (
-        <NavStyle>
-       
-                
+            <NavStyle>
                 <Link to="/" style={linkStyle}>Home</Link>
                 <Link to="/error" style={linkStyle}>About</Link>
                 <Break/>
-                
-                
                 <Break/>
                 <input style={searchStyle} type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"/>
-
-
                 <Break/>
                 <Break/>
-           
-                <Link to="/templog" style={linkStyle}>Login</Link>
-                <Link to="/tempreg" style={linkStyle}>Signup</Link>
-      
-        </NavStyle>
+                <Link to="/login" style={linkStyle}>Login</Link>
+                <Link to="/signup" style={linkStyle}>Signup</Link>
+            </NavStyle>
     )
 }
-
-export default Navbar;

@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { Space, Container, Wrapper, Title } from '../../styles/global.styled.js';
+import { Container, Title } from '../../styles/global.styled.js';
 
-const ContentStyle = styled.nav`
+const ContentStyle = styled.div`
     display: flex;
     align-items: center;
- 
     background: white;
     color: black;
     padding: 10px;
@@ -13,8 +12,7 @@ const ContentStyle = styled.nav`
     
 `
 
-
-function ContentView() {
+export default function ContentView() {
     return (
         <>
         <Container>
@@ -26,5 +24,3 @@ function ContentView() {
         </>
     )
 }
-
-export default ContentView

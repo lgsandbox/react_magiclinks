@@ -2,13 +2,14 @@ import { render } from "react-dom";
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  
 } from "react-router-dom";
 import App from "./App";
-import Error from './routes/pages/error'
-import TempReg from "./routes/pages/tempRegister";
-import TempLog from "./routes/pages/tempLogin"
-// routes succesful can nest pages folder
+import Error from './pages/errorPage'
+import Login from "./components/login/Login";
+import Callback from "./routes/Callback";
+import Profile from "./components/login/Profile";
 
 
 const rootElement = document.getElementById("root");
@@ -17,9 +18,15 @@ render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="error" element={<Error />} />
-      <Route path="tempReg" element={<TempReg />} />
-      <Route path="tempLog" element={<TempLog />} />
+      <Route path="/login" element={<Error/>}/>
+      <Route path="/signup" element={<Error/>}/>
+
+      <Route path="/callback" element={ <Callback />}/>
+      <Route path="*" element={    <Profile />}/>
+
+      
     </Routes>
   </BrowserRouter>,
   rootElement
 );
+
