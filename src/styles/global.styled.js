@@ -1,16 +1,31 @@
 import styled from 'styled-components';
 
-// nested and paired styled and animations
+// import because i keep clicking here anyways haha
+// ./styles/global.styled.js
 
 const Title = styled.h1`
   font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
+  color: black;
 `;
 
 const Wrapper = styled.section`
-  padding: 4em;
+  display: flex;
   background: papayawhip;
 `;
 
-export { Wrapper, Title };
+const Break = styled.section`
+  flex-basis: 100%;
+  height: 0;
+`
+const Container = styled.section`
+  display:flex;
+  justify-content: center;
+`
+const Space = styled.section`
+  flex-direction: column;
+  height: 50px;
+  marging: 20px;
+
+`
+
+export { Wrapper, Title, Break, Container, Space}
