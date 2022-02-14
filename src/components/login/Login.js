@@ -44,7 +44,7 @@ export default function Login() {
 
       <Container>
 
-        <Title>Login</Title>
+        <Title> Login and register with one input through magic links </Title>
 
       </Container>
       <Container>
