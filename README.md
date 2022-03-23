@@ -1,7 +1,7 @@
-functional react/router basics w/ added magic links:
+react/router basics w/ magic links:
 
-react-auth.on.fleek.co
+https://react-auth.on.fleek.co/
 
 same starter but with removed auth:
 
-https://www.simple-react-app.on.fleek.co
+https://simple-react-app.on.fleek.co/
