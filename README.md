@@ -4,4 +4,4 @@ react-auth.on.fleek.co
 
 same starter but with removed auth:
 
-simple-react-app.on.fleek.co
+https://www.simple-react-app.on.fleek.co
