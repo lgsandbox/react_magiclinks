@@ -1,3 +1,5 @@
+These are two Web3 starters, using hardhat/ether
+
 react/router basics w/ magic links:
 
 https://react-auth.on.fleek.co/
