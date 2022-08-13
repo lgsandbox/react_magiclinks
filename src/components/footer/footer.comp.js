@@ -15,7 +15,7 @@ export default function Footer() {
     return (
         <FooterStyle>
             <Container>
-            We've got fun & games 
+            
             </Container>
         </FooterStyle>
     )
