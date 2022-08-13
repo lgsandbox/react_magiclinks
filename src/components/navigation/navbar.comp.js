@@ -40,7 +40,7 @@ export default function Navbar() {
                 <Link to="/error" style={linkStyle}>About</Link>
                 <Break/>
                 <Break/>
-                <input style={searchStyle} type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"/>
+                <Break/>
                 <Break/>
                 <Break/>
                 <Link to="/login" style={linkStyle}>Login</Link>
